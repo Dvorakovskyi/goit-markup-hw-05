@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="benefits section">
@@ -241,8 +241,7 @@
                       href="https://twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
-                      aria-label="Twitter icon"
-                    >
+                      aria-label="Twitter icon">
                       <svg class="icon-social" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -585,5 +584,16 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal-window>
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="icon-modal" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
